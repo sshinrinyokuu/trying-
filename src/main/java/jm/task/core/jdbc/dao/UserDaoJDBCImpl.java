@@ -10,7 +10,7 @@ import java.util.List;
 
 public class UserDaoJDBCImpl implements UserDao {
 
-    private final Connection conn = new Util().getConnection();
+    private final Connection conn =Util.getConnection();
 
     private static final String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS users (" +
             "id BIGINT AUTO_INCREMENT PRIMARY KEY, " +
